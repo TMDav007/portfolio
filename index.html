@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toluwalase | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Orbitron&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/dcfa3237c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation-->
+    <nav>
+        <div id="navbar">
+            <div class="mobileNav">
+                <div class="logo">
+                    <a href="#home"><img src="images/logo.png" alt=""></a>
+                </div>
+                 <i class="material-icons menu" onclick="menu()">menu</i>
+            </div>
+
+            <div class="links">
+                <ul id="menu">
+                    <li><a href="#home" class="home link active" onclick="linkfun()">Home</a></li>
+                    <li><a href="#about" class="about link" onclick="linkfun()">About</a></li>
+                    <li><a href="#project" class="project link" onclick="linkfun()">Projects</a></li>
+                    <li><a href="#contact" class="contact link" onclick="linkfun()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="homebody">
+            <!--Name get printed-->
+            <h1 id="name"></h1>
+            <h3>Frontend Developer</h3>
+        </div>
+    </section>
+    <!--About us-->
+    <section class="about" id="about">
+        <div class="about_subsection">
+            <div class="about_text">
+                <p>
+                    I am Toluwalase Afolabi, a frontend/full stack developer. I have an eye for good designs and I can bring your product imaginations to reality</p>
+                <div class="about_btn">
+                    <p class="btn"> <a href="./images/afolabi toluwalase-cv.pdf" download>Resume</a> </p>
+                    <p class="btn"> <a href="#project">Projects</a></p>
+                </div>
+            </div>
+            <div class="about_img">
+                <img src="./images/tolu.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Projects-->
+        <section class="project" id="project">
+            <div class="project_subsection">
+                <div class="project_body">
+                    <h1 class="project_name">Question and Answer</h1>
+                    <p class="project_details">
+                        This is an application that intend to proffer solution to your questions. you get answers to questions by fellow users.
+                    </p>
+                    <p class="project_link">
+                       <a href="https://questionsandanswer.herokuapp.com/login">Check it out...</a> 
+                    </p>
+                </div>
+                <div class="project_img">
+                    <img src="./images/port1.png" alt="">
+                </div>
+            </div>
+    
+            <div class="project_subsection">
+                <div class="project_body">
+                    <h1 class="project_name">Hulu Clone</h1>
+                    <p class="project_details">
+                        This project is a demo of Hulu. Hulu is a leading premium streaming service offering live and on-demand TV and movies . It displays the genres or categories of movies
+                    </p>
+                    <p class="project_link">
+                       <a href="https://hulu-demo.vercel.app/ ">Check it out...</a> 
+                    </p>
+                </div>
+                <div class="project_img">
+                    <img src="./images/port2.png" alt="">
+                </div>
+            </div>
+    
+            <div class="project_subsection">
+                <div class="project_body">
+                    <h1 class="project_name">Maintenance Tracker</h1>
+                    <p class="project_details">
+                        This is a application that keep tracker of requests from users. This app will allow users make a request or requests or complaint to a maintenance tracking office, in which your request get approved and resolved or disapproved
+                    </p>
+                    <p class="project_link">
+                       <a href="https://tmdav007.github.io/Maintenance-Tracker/UI/index.html">Check it out...</a> 
+                    </p>
+                </div>
+                <div class="project_img">
+                    <img src="./images/port3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+    <!--Contact -->
+    <section class="contact" id="contact">
+
+        <div class="contact_icon">
+            <div class="contact_contact">
+                <h3>Connect with me </h3>
+                <span>
+                    <a href="mailto:afolabiopeyemi016@gmail.com"> <i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/TMDav007"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/afolabi-opeyemi/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.twitter.com/opsyzy"><i class="fab fa-twitter"></i></a>
+                </span>
+            </div> 
+            <div class="icon_container">
+                <i class="fab fa-sass" style="color: green;"></i>
+                <i class="fab fa-html5" style="color: #4f49b7;"></i>
+                <i class="fab fa-js" style="color: #1f7a84;"></i>
+                <i class="fab fa-node" style="color: #80001e;"></i>
+                <i class="fab fa-react" style="color: #7e0080;"></i>
+                <a href="https://zuri.team"><img src="./images/hng.jpeg" alt=""></a>
+            </div>
+           
+        </div>
+
+    </section>
+</body>
+<script src="myscripts.js"></script>
+</html>
