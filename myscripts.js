@@ -16,8 +16,13 @@ lastScrollTop = scrollTop;
 
 
 //chnage nav to active on scroll
+const container = document.getElementById("container")
+
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav #navbar .links ul li a");
+const navLi = document.querySelectorAll("div nav #navbar .links ul li a");
+
+
+
 window.onscroll = () => {
   var current = "";
 
@@ -26,9 +31,9 @@ window.onscroll = () => {
     if (pageYOffset >= sectionTop - 60) {
       current = section.getAttribute("id"); }
   });
+  //name get printed from here
   if (current === "home"){
-      console.log(true)
-      document.getElementById("name").innerHTML = printName("Toluwalase Afolabi");
+     // document.getElementById("name").innerHTML = printName("Toluwalase Afolabi");
   }
 
   navLi.forEach((a) => {
@@ -68,8 +73,33 @@ const linkfun = () => {
 }
 
 
+
+
 //Task 2 - Printout Out my name
 const printName = (name) => {
     return name
 }
+
+//Intersection Observer
+let anim = document.querySelectorAll(".anim")
+observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.style.animation = `anim1 2s ease`;
+            entry.target.style.opacity = 1;
+        } else {
+            entry.target.style.animation = 'none';
+            entry.target.style.opacity = 0;
+        }
+    })
+
+}, {
+    threshold: 0.1,
+    rootMargin: "0px"
+});
+
+anim.forEach((ani) => {
+    observer.observe(ani)
+})
+
 
